@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    font-size: 1.125rem;
+
+ 
+}
+
+/* global css */
+a {
+    text-decoration: none;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+/* end  global css */
+
+
+
+/* nav */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+nav ul {
+    display: flex;
+}
+
+
+nav ul li {
+    padding: 0 13px;
+    color: hsl(0, 0%, 98%);
+    line-height: 4;
+}
+
+nav ul li a {
+    color:  hsl(233, 8%, 62%);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+nav button,
+#home .left  button,
+#footer button  {
+    width: 130px;
+    height: 37px;
+    background: linear-gradient(to left, hsl(136, 65%, 51%), hsl(192, 70%, 51%) );
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav button a,
+#home .left  button,
+#footer button a  {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+nav button:hover,
+#home .left  button:hover,
+#footer button:hover {
+    opacity: 0.8;
+}
+
+/* end navbar  css */
+
+/* banner section */
+
+#home {
+    display: flex;
+    position: relative;
+    padding-left: 50px;
+}
+
+#home .left {
+    max-width: 50%;
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px 0 40px;
+}
+
+#home .left  h2 {
+    color:  hsl(233, 8%, 62%);
+    font-style: 700;
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+#home .left  p,
+#about div p,
+#about .services  .card p,
+#article .card-wrapper .card p {
+    color:  hsl(233, 8%, 62%);
+    font-size: 1rem;
+}
+
+#home .right {
+    max-width: 50%;
+    flex: 50%;
+    position: relative;
+    
+}
+
+#home .right div {
+    background: url("/images/image-mockups.png") !important;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+
+/* about section css */
+
+#about {
+    background-color: hsl(0, 0%, 98%);
+    padding: 50px;
+}
+
+#about .title h2,
+#article .title h2 {
+    color:  hsl(233, 8%, 62%);
+    font-size: 2.1875rem;
+    line-height: 20px;
+}
+
+#about .services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#about .services h3,
+#article .card h3 {
+    color:  hsl(233, 8%, 62%);
+    font-weight: 400;
+    
+}
+
+
+#about .services  .card,
+#article .card-wrapper .card  {
+    padding: 20px 20px;
+    
+}
+
+#about .services  .card h3 {
+    font-size: 1.375rem;
+}
+
+/* end of about */
+
+/* article section */
+
+#article {
+    padding: 50px;
+}
+
+#article .card-wrapper  {
+    display: flex;
+}
+
+#article .card h5 {
+    color:  hsl(233, 8%, 62%);
+    font-size: 0.75rem;
+}
+
+#article .card img {
+    width: 300px;
+    height: 250px;
+}
+
+
+/* end article section */
+
+
+/* footer section */
+
+#footer {
+    background: hsl(233, 26%, 24%);
+    padding: 50px;
+}
+
+#footer .wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer .wrapper .icons  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+#footer .icon-wrapper,
+#footer  .btn-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+#footer .wrapper .menu {
+    display: flex;
+}
+
+#footer .menu ul li {
+    padding: 0 10px  10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+
+}
+#footer .menu ul li a {
+    color: hsl(0, 0%, 100%);
+}
+
+#footer  .btn-wrapper p{
+    color:  hsl(233, 8%, 62%);
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+
+
+
+.attribution { 
+    color: hsl(0, 0%, 100%);
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a {
+    color: hsl(0, 0%, 100%);
+}
